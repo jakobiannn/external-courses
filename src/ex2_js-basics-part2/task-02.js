@@ -1,6 +1,4 @@
-function showArr(arr){
-  //make 'for' cycle and print every interation
-  //print array length at the end of function
+function arrayPrint(arr){
   for(let i = 0; i < arr.length; i++){
     console.log(arr[i]);
   }
