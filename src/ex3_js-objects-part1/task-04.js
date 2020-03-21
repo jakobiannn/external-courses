@@ -1,11 +1,9 @@
-function checkOrAdd(str, obj){
-  //check key with 'for' cycle
+function checkOrAddProperty(prop, obj){
   for(key in obj){
-	if(obj.hasOwnProperty(key)){
-		//if input string is unequal to key - create new property
-      	if (str !== key){
-        	obj[str] = 'new'; // eslint-disable-line no-param-reassign
-        }
+	  if(obj.hasOwnProperty(key)){
+     	if (prop !== key){
+        obj[prop] = 'new'; //eslint-disable-line no-param-reassign
+      }
     }	
   }
   return obj;
