@@ -1,0 +1,27 @@
+h1, h2, h3 {
+    background-color: rgb(204, 153, 102);
+    font-style: italic;
+}
+.lists {
+    background-color: #d9b38c;
+}
+.lists a {
+    color: #604020;
+    font-family: "AaarghRegular";
+}
+#cats {
+    width : 150px;
+    height: 100px;
+}
+hr {
+    color : #d2fafb;
+}
+@font-face {
+    font-family: "AaarghRegular";
+    src: url("../fonts/AaarghRegular/AaarghRegular.eot");
+    src: url("../fonts/AaarghRegular/AaarghRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AaarghRegular/AaarghRegular.woff") format("woff"),
+    url("../fonts/AaarghRegular/AaarghRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
