@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+}
+.slide-show {
+    width: 500px;
+    height: 300px;
+
+    opacity:0; 
+    transition: 1s; 
+    animation: show 3s 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0%{
+        opacity:0;
+    }       
+    100% {
+         opacity:1;
+    }
+}
