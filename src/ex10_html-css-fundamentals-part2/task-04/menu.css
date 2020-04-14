@@ -1,0 +1,48 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 0px;
+  border-top: 1px solid #ECEEF4;
+
+
+}
+.menuBar {
+  display: flex;
+}
+.menuButton {
+  margin-left: -4px;
+  padding: 20px;
+  background-color: white;
+  color: #6D6E71;
+  height: 86px;
+  white-space: nowrap;
+  font-weight: bolder;
+  border-width: 0px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+.menuButton:hover {
+  color: #2BABE0;
+}
+input.Search {
+  width: 200px;
+  margin: 10px;
+}
+.Search {
+  border-width: 0px;
+  width: 86px;
+}
+#homeButton {
+  box-shadow: 0 0 0px;
+}
+#contactButton {
+  box-shadow: 0 0 0px;
+  margin-left: 5px;
+ }
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+.arrow-up {
+  position: relative;
+}
