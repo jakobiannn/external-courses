@@ -1,11 +1,16 @@
-function arrReduce(array, callback, initialValue){
-	let previousValue = null;
+function reduceArr(array, callback, initialValue){
+	let previousValue;
+	let i = 0;
 	if(initialValue !== undefined){
 		previousValue = initialValue;
+	} else {
+		previousValue = array[0];
+		i = 1;
 	}
-	for(let i = 0; i < array.length; i++){
+
+	for(i; i < array.length; i++){
 		previousValue = callback(previousValue, array[i], i, array);
 	}
 	return previousValue;
 }
-module.exports = arrReduce;
+module.exports = reduceArr;

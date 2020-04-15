@@ -1,4 +1,4 @@
-function arrMap(arr, callback){
+function mapArr(arr, callback){
 	let newArr = [];
 
 	for(let i = 0; i < arr.length; i++){
@@ -6,4 +6,4 @@ function arrMap(arr, callback){
 	}
 	return newArr;
 }
-module.exports = arrMap;
+module.exports = mapArr;

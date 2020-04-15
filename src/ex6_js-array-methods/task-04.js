@@ -1,4 +1,4 @@
-function arrFilter(arr, callback){
+function filterArr(arr, callback){
 	let newArr = [];
 
 	for(let i = 0; i < arr.length; i++){
@@ -6,8 +6,8 @@ function arrFilter(arr, callback){
 			newArr.push(arr[i]);
 		}
 	}
-	
+
 	return newArr;
 }
 
-module.exports = arrFilter;
+module.exports = filterArr;

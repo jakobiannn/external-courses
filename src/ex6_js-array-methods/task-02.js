@@ -1,4 +1,4 @@
-function arrSome(arr, callback){
+function someArr(arr, callback){
 	for(let i = 0; i < arr.length; i++){
 		if(callback(arr[i], i, arr)) {
 			return true;
@@ -7,4 +7,4 @@ function arrSome(arr, callback){
 
 	return false;
 }
-module.exports = arrSome;
+module.exports = someArr;

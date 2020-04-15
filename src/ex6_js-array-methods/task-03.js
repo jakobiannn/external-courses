@@ -1,4 +1,4 @@
-function arrEvery(arr, callback){
+function everyArr(arr, callback){
 	for(let i = 0; i < arr.length; i++){
 		if(!callback(arr[i], i, arr)){
 			return false;
@@ -7,4 +7,4 @@ function arrEvery(arr, callback){
 	return true;
 }
 
-module.exports = arrEvery;
+module.exports = everyArr;
