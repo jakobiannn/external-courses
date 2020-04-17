@@ -1,0 +1,102 @@
+body { 
+    background: rgb(71,66,235);
+    background: linear-gradient(0deg, rgba(71,66,235,1) 29%, rgba(0,212,255,1) 100%);
+    background-repeat:no-repeat;
+}
+  .spinner {
+
+    width: 500px;
+    height: 500px;
+    border: 30px solid white;
+    border-left-color: #6fc4d0;
+    border-bottom-color: #63a9dd;
+
+    border-right-color: transparent;
+
+    border-radius: 100%;
+
+    animation: spin 2000ms infinite linear;
+  }
+
+
+
+@keyframes spin {
+    100% {
+     transform: rotate(360deg);
+    }
+}
+
+
+.stage {
+    display: flex;
+    height: 330px;
+    width: 100%;
+}
+.circle {
+    align-self: flex-end;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    background-color: #162e40;
+    height: 200px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 200px;
+    border-radius: 100%;
+}
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+.box {
+    align-self: flex-end;
+    background-color: #162e40;
+    height: 200px;
+    margin: 0 auto 0 auto;
+    width: 200px;
+}
+@keyframes bounce {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(450px); }
+    50%    { transform: translateX(0px); }
+    75%  { transform: translateX(-450px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(450px); }
+    50%    { transform: translateX(0px); }
+    75%  { transform: translateX(-450px); }
+    100% { transform: translateX(0); }
+}
+
+#boxGradient {
+    align-self: flex-end;
+    background: linear-gradient(77deg, rgb(17, 142, 199) 0%, rgb(215, 238, 248) 100%);
+    height: 200px;
+    margin: 0 auto 0 auto;
+    width: 200px;
+    border-radius: 100%;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.animation {
+    animation-name: animation;
+    animation-timing-function: linear;
+}
+@keyframes animation {
+    0% { border-radius: 100%; }
+    15% { border-radius: 0%; }
+    30% { background: linear-gradient(77deg, rgb(255, 142, 199) 0%, rgb(215, 238, 248) 100%); }
+    45% { 
+        width: 500px; 
+        transform: skew(-15deg,-15deg);
+    }
+    60% { transform: rotate(360deg); }
+    75% { background:  linear-gradient(77deg, rgb(0, 255, 255) 0%, rgb(255, 20, 248) 100%); }
+    90% { border-radius: 100%;}
+}
