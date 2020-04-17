@@ -10,7 +10,13 @@
     animation: show 3s 1; 
     animation-fill-mode: forwards;
 }
-
+button {
+    height: 300px;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+}
 @keyframes show {
     0%{
         opacity:0;

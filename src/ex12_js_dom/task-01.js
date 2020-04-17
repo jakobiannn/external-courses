@@ -13,25 +13,26 @@ photo3.src = 'president.jpg';
 
 let photos = [
     photo1, photo2, photo3
-]
-
+];
 let currentSlide = 0;
 
-rightButton.addEventListener('click', function() { 
-    console.log("Я запустилась");       
+photos[0].classList.add('slide-show');
+imageSide.appendChild(photos[0]);
+
+
+rightButton.addEventListener('click', function() {
     currentSlide++;
     if (currentSlide > photos.length - 1){
         currentSlide = 0;
     }
 
     photos[currentSlide].classList.add('slide-show');
-    
+
     imageSide.replaceChild(photos[currentSlide], document.querySelector(".slide-show"));
     return;
 });
 
 leftButton.addEventListener('click', function(){
-    console.log("Я запустилась");
     currentSlide--;
     if (currentSlide < 0) {
         currentSlide = photos.length - 1;
