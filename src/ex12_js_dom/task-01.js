@@ -1,45 +1,30 @@
-let imageSide = document.getElementById("imageContainer"),
-    leftButton = document.getElementById("left"),
-    rightButton = document.getElementById("right"),
-    currentImg = document.querySelector(".slide-show");
-
-let photo1 = new Image ();
-let photo2 = new Image ();
-let photo3 = new Image ();
-
-photo1.src = 'pigs.jpg';
-photo2.src = 'cat.jpg';
-photo3.src = 'president.jpg';
+let leftButton = document.getElementById("leftBtn"),
+    rightButton = document.getElementById("rightBtn"),
+    currentImg = document.querySelector("#slide");
 
 let photos = [
-    photo1, photo2, photo3
+    'pigs.jpg', 'cat.jpg', 'president.jpg'
 ];
 let currentSlide = 0;
 
-photos[0].classList.add('slide-show');
-imageSide.appendChild(photos[0]);
-
+window.addEventListener('load', function() {
+   currentImg.src = photos[0];
+})
 
 rightButton.addEventListener('click', function() {
     currentSlide++;
     if (currentSlide > photos.length - 1){
         currentSlide = 0;
     }
-
-    photos[currentSlide].classList.add('slide-show');
-
-    imageSide.replaceChild(photos[currentSlide], document.querySelector(".slide-show"));
+    currentImg.src = photos[currentSlide];
     return;
 });
 
 leftButton.addEventListener('click', function(){
     currentSlide--;
-    if (currentSlide < 0) {
+    if (currentSlide < 0){
         currentSlide = photos.length - 1;
     }
-
-    photos[currentSlide].classList.add('slide-show');
-
-    imageSide.replaceChild(photos[currentSlide], document.querySelector(".slide-show"));
+    currentImg.src = photos[currentSlide];
     return;
 })

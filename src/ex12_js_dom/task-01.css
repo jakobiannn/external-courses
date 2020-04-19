@@ -1,7 +1,8 @@
-.main {
+.slider {
     display: flex;
+    justify-content: center;
 }
-.slide-show {
+#slide {
     width: 500px;
     height: 300px;
 
@@ -13,6 +14,16 @@
 button {
     height: 300px;
 }
+button:hover{
+    cursor: pointer;
+}
+button:target #slide{
+    opacity:0; 
+    transition: 1s; 
+    animation: show 3s 1; 
+    animation-fill-mode: forwards;
+}
+
 .arrow {
     width: 20px;
     height: 20px;
