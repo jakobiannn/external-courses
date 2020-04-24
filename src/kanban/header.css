@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: 100%;
+    height: 55px;
+    background-color: #0067A3;
+}
+#leftMenu {
+    width: 45px;
+    height: 45px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    width: 384px;
+    height: 45px;
+    left: 14px;
+    top: 5px;
+}
+#logoTitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color:white;
+}
+.rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 294px;
+}
+.createList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 181px;
+    height: 33px;
+    padding-left: 9px;
+
+    border-radius: 5px;
+    background-color: white;
+    border-width: 0px;
+}
+#textCreateBtn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.uiMenu {
+    position: absolute;
+    right: 0px;
+    top: 55px;
+
+    background-color: #EBECF0;;
+    width: 150px;
+    height: 100px;
+    z-index: 2;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uiMenuBtn {
+    border: none;
+    background-color: white;
+    margin: 3px;
+    width: 130px;
+    height: 25px;
+    border-radius: 5px;
+}
+#profileMenu {
+    background-color:#0067A3;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
