@@ -65,6 +65,7 @@ header {
     position: absolute;
     right: 0px;
     top: 55px;
+    margin-top: 2px;
 
     background-color: #EBECF0;;
     width: 150px;
@@ -93,4 +94,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+#profileMenu:hover {
+    cursor: pointer;
 }
