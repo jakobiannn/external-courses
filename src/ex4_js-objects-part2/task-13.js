@@ -1,5 +1,4 @@
 function generateRandom() {
-	return Math.round(Math.random() * (101 - 1) + 1);
+	return Math.round(Math.random() * 100 - 0.5);
 }
-
 module.exports = generateRandom;

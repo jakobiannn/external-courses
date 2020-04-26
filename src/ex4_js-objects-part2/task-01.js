@@ -1,10 +1,8 @@
 function findProto(property, obj){
-  for(let key in obj){
-    if(!obj.hasOwnProperty(key)){
-      if(property === key){return obj[property];}
-    }
+  if (property in Object.getPrototypeOf(obj)){
+    return obj[property];
   }
+
   return undefined;
 }
-
 module.exports = findProto;

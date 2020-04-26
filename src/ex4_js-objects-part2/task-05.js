@@ -1,8 +1,4 @@
 function findString(str, findedStr){
-	if (str.includes(findedStr)){
-		return true;
-	}
-	return false;
+	return str.includes(findedStr);
 }
-
 module.exports = findString;

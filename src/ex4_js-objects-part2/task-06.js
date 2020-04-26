@@ -1,13 +1,10 @@
 function setUpper(str){
-  let newStr = str[0].toUpperCase() + str.slice(1);
-  
-  for(let i = 1; i < newStr.length; i++){
-    if(newStr[i] === ' '){
-      newStr = newStr.slice(0, i + 1) + newStr[i + 1].toUpperCase() + newStr.slice(i + 2);
-    }
+	let arrStr = str.split(' ');
+
+  for(let i = 0; i < arrStr.length; i++) {
+    arrStr[i] = arrStr[i][0].toUpperCase() + arrStr[i].slice(1);
   }
-  return newStr;
+
+  return arrStr.join(" ");
 }
-
-
 module.exports = setUpper;

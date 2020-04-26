@@ -1,12 +1,11 @@
-function getLowerCase(str){
-	let newStr = str.toLowerCase();
+function setLowerCamelCase(str){
+	let arrStr = str.toLowerCase().split(' ');
 
-	for(let i = 1; i < newStr.length; i++){
-	  if(newStr[i] === ' '){
-	    newStr = newStr.slice(0, i) + newStr[i + 1].toUpperCase() + newStr.slice(i + 2);
-	  }
-	}
-	return newStr;
+	for(let i = 1; i < arrStr.length; i++) {
+			arrStr[i] = arrStr[i][0].toUpperCase() + arrStr[i].slice(1);
+		}
+
+	return arrStr.join("");
 }
 
 module.exports = getLowerCase;
