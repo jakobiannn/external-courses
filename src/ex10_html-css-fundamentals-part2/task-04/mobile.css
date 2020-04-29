@@ -43,6 +43,13 @@
   .bottomTitle {
       margin-bottom:100px;
   }
-
-
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftText, .rightText {
+    width: 70%;
+  }
 }

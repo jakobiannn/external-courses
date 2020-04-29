@@ -1,11 +1,13 @@
 .slideBar {
   grid-column-start: 3;
-  width: 756px;
+  grid-column-end: 5;
+  /* width: 756px; */
 
-  grid-row-start: 5;
+  grid-row-start: 6;
   grid-row-end: 8;
   display: flex;
   justify-content: flex-end;
+  margin-right: 100px;
 }
 .slider {
   display: flex;

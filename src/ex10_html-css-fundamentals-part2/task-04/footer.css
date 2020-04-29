@@ -5,7 +5,7 @@ footer {
 .leftText, .rightText {
   width: 530px;
   display: grid;
-  grid-template-columns: 110px 420px;
+  grid-template-columns: 1fr 4fr;
 }
 .leftImage {
   grid-column-start: 1;
