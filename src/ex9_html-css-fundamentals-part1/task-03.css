@@ -10,27 +10,29 @@ button {
   border-width: 0px;
   margin: 1px;
 }
-.star {
-  color: #888888;
-}
-
-.firstBoard {
+.firstBoard{
   width: 202px;
   background: #CBCBCB;
   padding: 4px;
   border-radius: 12px;
 }
-
-.secondBoard {
+.secondBoard{
   width: 210px;
   background: white;
   padding: 1px;
   border-radius: 12px;
 }
-
 .thirdBoard {
   background: black;
   width: 212px;
   padding: 1px;
   border-radius: 12px;
+  
+
+  line-height: 50px;
+  text-align: center;
+}
+button:before, button:after {
+  content: "\2605";
+  color: #888888;
 }
