@@ -9,13 +9,13 @@
     <form action="http://httpbin.org/post" method="post">
       <span class="header">Personal data</span>
         <div class="table">
-          Surname  <input type="text" name="Surname"><br>
-          First Name <input type="text" name="FitstName"><br>
-          Middle Name <input type="text" name="MiddleName"><br>
-          You are <input type="radio" name="gender" value="male"> male
-                  <input type="radio" name="gender" value="female"> female<br>
+          <label for="SName">Surname</label>  <input type="text" name="Surname" id="SName"><br>
+          <label for="FName">First Name</label> <input type="text" name="FitstName" id="FName"><br>
+          <label for="MName">Middle Name</label> <input type="text" name="MiddleName" id="MName"><br>
+          You are <input type="radio" name="gender" value="male" id="male"> <label for="male">male</label>
+                  <input type="radio" name="gender" value="female" id="female"> <label for="female">female</label><br>
 
-          Age <input type="number" min="18" max="101"><br>
+          <label for="age">Age</label> <input type="number" min="18" max="101" id="age"><br>
 
           Country of Residence
           <select>
@@ -25,8 +25,8 @@
             <option>Belarus</option>
           </select><br>
 
-          City <input type="checkbox" name="city" value="ryazan">Ryazan
-          <input type="checkbox" name="city" value="moscow">Moscow<br>
+          City <input type="checkbox" name="city" value="ryazan" id="rzn"><label for="rzn">Ryazan</label>
+          <input type="checkbox" name="city" value="moscow" id="msk"><label for="msk">Moscow</label><br>
 
           Photography <input type="file"><br>
           <hr>
@@ -49,11 +49,11 @@
         <br>
         <span class="header">Contact Information</span>
         <div class="table">
-          Site <input type="text" name="site"><br>
-          Email <input type="text" name="email"><br>
-          Phone <input type="text" name="phone"><br>
+          <label for="site">Site</label> <input type="text" name="site" id="site"><br>
+          <label for="email">Email</label> <input type="text" name="email" id="email"><br>
+          <label for="phone">Phone</label> <input type="text" name="phone" id="phone"><br>
         </div><br>
-        Password <input type="password" required name="password"><br>
+        <label for="pass">Password</label> <input type="password" required name="password" id="pass"><br>
         <button>Отправить</button> <button>Сбросить</button>
     </form>
   </body>
