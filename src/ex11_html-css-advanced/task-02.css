@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+
+    width: 350px;
+}
+
+.field { 
+    position:relative; 
+    font-family: Arial; 
+    text-transform:uppercase; 
+    font-weight:bold; 
+    display:inline-block;
+
+    border: 1px solid #F9F9F9;
+}
+label { 
+    position:absolute; 
+    left:0; 
+    top:0; 
+    transition: all .2s linear; 
+    color:#999; 
+    font-size:8px; 
+}
+input { 
+    margin-top:10px; 
+    border:1px solid #999; 
+    padding:3px 2px; 
+
+    border: none;
+}
+input:invalid + label { 
+    top:3px; 
+    opacity:0; 
+}
+input:valid + label { 
+    opacity:1; 
+    top:0; 
+}
+input:focus { 
+    outline:none; 
+}
+input:focus + label { color:#33A; }
+
+.line {
+    display: flex;
+}
