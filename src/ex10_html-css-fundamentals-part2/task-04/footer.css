@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+.leftText, .rightText {
+  width: 530px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.leftImage {
+  grid-column-start: 1;
+}
+p {
+  grid-column-start: 2;
+}

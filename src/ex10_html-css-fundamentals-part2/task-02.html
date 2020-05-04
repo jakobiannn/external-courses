@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EX 2</title>
+    <link rel="stylesheet" href="task-02.css">
+  </head>
+  <body>
+    <form action="http://httpbin.org/post" method="post">
+      <span class="header">Personal data</span>
+        <div class="table">
+          <label for="SName">Surname</label>  <input type="text" name="Surname" id="SName"><br>
+          <label for="FName">First Name</label> <input type="text" name="FitstName" id="FName"><br>
+          <label for="MName">Middle Name</label> <input type="text" name="MiddleName" id="MName"><br>
+          You are <input type="radio" name="gender" value="male" id="male"> <label for="male">male</label>
+                  <input type="radio" name="gender" value="female" id="female"> <label for="female">female</label><br>
+
+          <label for="age">Age</label> <input type="number" min="18" max="101" id="age"><br>
+
+          Country of Residence
+          <select>
+            <option selected label=" "></option>
+            <option>Russia</option>
+            <option>Ukraine</option>
+            <option>Belarus</option>
+          </select><br>
+
+          City <input type="checkbox" name="city" value="ryazan" id="rzn"><label for="rzn">Ryazan</label>
+          <input type="checkbox" name="city" value="moscow" id="msk"><label for="msk">Moscow</label><br>
+
+          Photography <input type="file"><br>
+          <hr>
+          Title
+          <select name="select" size="6">
+            <optgroup label="Technologies">
+              <option value="Web_Master">Web Master</option>
+              <option value="Database_Administrator">Database Administrator</option>
+              <option value="Computer-aided_design">Computer-aided design</option>
+            </optgroup>
+            <optgroup label="Finance">
+              <option value="Economic_Planning">Economic Planning</option>
+              <option value="Management_accounting">Management accounting</option>
+              <option value="Budgeting_and_planning">Budgeting and planning</option>
+            </optgroup>
+          </select><br>
+          Salary <input type="range" min="1" max="5"><br>
+          <textarea name="comment" placeholder="Tell us about yourself..."></textarea>
+        </div>
+        <br>
+        <span class="header">Contact Information</span>
+        <div class="table">
+          <label for="site">Site</label> <input type="text" name="site" id="site"><br>
+          <label for="email">Email</label> <input type="text" name="email" id="email"><br>
+          <label for="phone">Phone</label> <input type="text" name="phone" id="phone"><br>
+        </div><br>
+        <label for="pass">Password</label> <input type="password" required name="password" id="pass"><br>
+        <button>Отправить</button> <button>Сбросить</button>
+    </form>
+  </body>
+</html>

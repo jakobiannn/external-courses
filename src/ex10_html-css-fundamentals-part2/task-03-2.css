@@ -1,0 +1,14 @@
+th {
+  border: 1px solid white;
+  padding: 7px;
+}
+td {
+  border: 1px solid white;
+  padding: 15px;
+}
+tr {
+  border: 1px solid white;
+}
+tr:hover {
+  background-color: #E2E5E9;
+}

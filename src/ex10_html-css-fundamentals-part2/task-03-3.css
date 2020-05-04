@@ -1,0 +1,15 @@
+.header {
+  background-color: #E3EAF3;
+  color: #7686AD;
+  text-transform: uppercase;
+}
+.n1 {
+  background-color: #F2F6FA;
+}
+.n2 {
+  background-color: #E3EAF3;
+}
+
+.name {
+  text-transform: capitalize;
+}

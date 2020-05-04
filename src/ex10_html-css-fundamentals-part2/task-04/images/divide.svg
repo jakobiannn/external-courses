@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 27" width="4" height="27">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #bcbec3 } 
+	</style>
+	<g id="desktop">
+		<g id="Header">
+			<g id="contact">
+				<path id="divide" class="shp0" d="M1 1L2 1L2 25L1 25L1 1Z" />
+			</g>
+		</g>
+	</g>
+</svg>

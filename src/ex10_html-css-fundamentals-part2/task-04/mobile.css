@@ -1,0 +1,55 @@
+@media (max-width: 1100px) {
+  .logo {
+    width: 155px;
+    float: inherit;
+  }
+  .topBar, .slideBar, .menuBar {
+    display: none;
+
+  }
+
+  .topSide {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-bottom: 20px;
+  }
+  #leftMenu {
+    grid-column-start: 1;
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+
+  header {
+    grid-column-start: 3;
+  }
+  .menu {
+    border-width: 0px;
+  }
+
+  .mainLogo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+
+
+  }
+  .topTitle {
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  .bottomTitle {
+      margin-bottom:100px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftText, .rightText {
+    width: 70%;
+  }
+}
