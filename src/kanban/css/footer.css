@@ -3,7 +3,7 @@ footer {
     height: 55px;
     
     
-    position: absolute;
+    position: fixed;
     left: 0;bottom: 0px;
     background: #0067A3; /* Цвет фона */ 
 
@@ -13,7 +13,7 @@ footer {
 
 
 }
-.leftText {
+.text__left-text {
     display: flex;
     justify-content: space-between;
     width: 333px;

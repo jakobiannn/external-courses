@@ -1,0 +1,106 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 75px;
+}
+.main__task-side {
+    width: 20%;
+    height: 100%;
+    background: #EBECF0;
+    border-radius: 10px;
+}
+
+.block-btn {
+    border-width: 0;
+    background: #EBECF0;
+}
+.task-side__top-side {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.task-side__main-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    background-color: white;
+    margin: 12px;
+    padding: 7px 9px 6px 8px;
+    border-radius: 5px;
+}
+.add-card-btn__bottom-btn {
+    color: #5E6C84;
+}
+.task-side__add-card-btn {
+    border-width: 0;
+    margin-left: 4px;
+    margin-bottom: 8px;
+    background: #EBECF0;
+}
+.task-side__add-card-btn:focus , .main__task-side__list:focus, .task-side__add-task-btn:focus {
+    outline:0
+}
+.task-side__add-card-btn:hover, .main__task-side__list:hover, .task-side__add-task-btn:hover {
+    cursor: pointer;
+}
+
+.task-side__main-side__input {
+    width: 80%;
+    height: 1em;
+    border: 0px;
+    outline: none;
+}
+.task-side__main-side__add-btn {
+    background-color: white;
+    border: 0px;
+}
+.main__task-side__list {
+    overflow:  hidden;
+    border: 0px;
+}
+.task-side__add-task-btn {
+    margin-top: 4px;
+    border: 0px;
+    background-color: white;
+}
+#backLogBlock {
+    margin-left: 24px;
+}
+#finishedBlock {
+    margin-right: 24px;
+}
+@media (max-width: 930px) {
+    body, html {
+        height: calc(100% - 55px);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    body {
+        overflow: auto;
+    }
+    .main {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .main__task-side {
+        width: 95%;
+        margin-top: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .task-side__main-side__form {
+        display: flex;
+        flex-direction: column;
+    }
+    .task-side__add-task-btn {
+        width: 100px;
+        white-space: nowrap;
+    }
+    #finishedBlock {
+        margin-bottom: 24px;
+    }
+}
