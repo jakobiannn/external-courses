@@ -1,19 +1,16 @@
-async function postData(methodType = '', url = '', data = {}) {
-  if (methodType === 'POST') {
-    const response = await fetch(url, {
-      method: methodType, 
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
-  } else if (methodType === 'GET') {
-    const response = await fetch(url, {
-      method: methodType, 
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+let request = 'https://jsonplaceholder.typicode.com/users';
+
+function serverRequest(url = '', method = '', data = null) {
+  let xhr = new XMLHttpRequest();
+
+  xhr.open(method, url);
+
+  if(data !== null) {
+    xhr.send(data);
+  } else {
+    xhr.send();
   }
-  return await response.json();  
+  
+  return xhr.response;
 }
+console.log(serverRequest(request, 'GET'));
