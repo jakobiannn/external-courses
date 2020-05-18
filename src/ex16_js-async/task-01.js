@@ -1,5 +1,3 @@
-let request = 'https://jsonplaceholder.typicode.com/users';
-
 function serverRequest(url = '', method = '', data = null) {
   let xhr = new XMLHttpRequest();
 
@@ -13,4 +11,3 @@ function serverRequest(url = '', method = '', data = null) {
   
   return xhr.response;
 }
-console.log(serverRequest(request, 'GET'));
