@@ -1,4 +1,4 @@
-function electroDevice(name, watt) {
+function ElectroDevice(name, watt) {
     this.name = name;
     this.watt = watt;
     this.isEnabled = false;
