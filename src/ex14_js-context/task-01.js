@@ -10,17 +10,14 @@ let Calculator = {
     return this.result;
   },
   add(num = 0) {
-    // if (this.result === 0) { this.result = 0;}
     this.result += num;
     return this;
   },
   subtract(num = 0) {
-    // if (this.result === 0) { this.result = 0;}
     this.result -= num;
     return this;
   },
   divide(num = 1) {
-    // if (this.result === 0) { this.result = 0;}
     this.result /= num;
     return this;
   },
