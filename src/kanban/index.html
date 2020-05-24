@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Course project</title>
+        <link rel="stylesheet" href="css\general.css">
+        <link rel="stylesheet" href="css\header.css">
+        <link rel="stylesheet" href="css\body.css">
+        <link rel="stylesheet" href="css\footer.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="leftMenu.svg" class="logo__menu" alt="menu">
+                <span class="logo__title">Awesome Kanban Board</span>
+            </div>
+            <div class="right-side">
+                <button class="right-side__create-list">
+                    <img src="createList.svg" alt="newList">
+                    <span class="text-create-btn">Create new list</span>
+                </button>
+                <button class="right-side__profile-menu">
+                    <img src="profileIcon.svg" alt="icon">
+                    <img src="uiArrow.svg" id="uiArrow" alt="arrow">
+                </button>
+                <script src="scripts\userMenu.js"></script>
+            </div>
+        </header>
+        <div class="main">
+            <div class="main__task-side" id="backLogBlock">
+                <div class="task-side__top-side">
+                    <span class="text">Backlog </span>
+                    <button class="block-btn">•••</button>
+                </div>
+                <button class="task-side__add-card-btn" id="backLogAddCard">
+                    <img src="addCard.svg" alt="add">
+                    <span class="add-card-btn__bottom-btn text">Add Card</span>
+                </button>
+                <script src="scripts\addTaskBacklog.js"></script>
+            </div>
+            <div class="main__task-side" id="readyBlock">
+                <div class="task-side__top-side">
+                    <span class="text">Ready </span>
+                    <button class="block-btn">•••</button>
+                </div>
+                <button class="task-side__add-card-btn" id="readyAddCard">
+                    <img src="addCard.svg" alt="add">
+                    <span class="add-card-btn__bottom-btn text">Add Card</span>
+                </button>
+                <script src="scripts\addTaskReady.js"></script>
+            </div>
+            <div class="main__task-side" id="inPBlock"> 
+                <div class="task-side__top-side">
+                    <span class="text">In Progress </span>
+                    <button class="block-btn">•••</button>
+                </div>
+                <button class="task-side__add-card-btn" id="inPAddCard">
+                    <img src="addCard.svg" alt="add">
+                    <span class="add-card-btn__bottom-btn text">Add Card</span>
+                </button>
+                <script src="scripts\inProgress.js"></script>
+            </div>
+            <div class="main__task-side" id="finishedBlock">
+                <div class="task-side__top-side">
+                    <span class="text">Finished </span>
+                    <button class="block-btn">•••</button>
+                </div>
+                <button class="task-side__add-card-btn" id="finishedAddCard">
+                    <img src="addCard.svg" alt="add">
+                    <span class="add-card-btn__bottom-btn text">Add Card</span>
+                </button>
+                <script src="scripts\addTaskFinished.js"></script>
+            </div>
+        </div>
+        <footer class="text" style="color:white">
+            <div class="text__left-text">
+                <div class="left-text__active-tasks">Active Tasks: 	&#60;N&#62;</div>
+                <div class="left-text__finished-tasks">Finished Tasks: &#60;M&#62;</div>
+            </div>
+            <div class="author">Kanban board by Alexey Chuyko, 2020 year</div>
+        </footer>
+    </body>
+</html>
